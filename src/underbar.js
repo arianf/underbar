@@ -55,7 +55,7 @@
   // Note: _.each does not have a return value, but rather simply runs the
   // iterator function over each item in the input collection.
   _.each = function(collection, iterator) {
-    if( Object.prototype.toString.call( collection ) === '[object Array]' ) {
+    if( Array.isArray(collection) ) {
       for (var i = 0; i < collection.length; i++) {
         iterator(collection[i], i, collection);
       };

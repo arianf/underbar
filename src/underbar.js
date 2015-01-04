@@ -348,7 +348,7 @@
     var rekey;
     var tempValue;
 
-    for(var key in array){
+    for(var key = 0; key < arr.length; key++){
       tempValue = arr[key];
       rekey = Math.floor(Math.random() * arr.length);
       arr[key] = arr[rekey];

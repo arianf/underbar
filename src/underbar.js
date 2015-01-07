@@ -196,7 +196,7 @@
       if(iterator === undefined)
         return item;
       else
-        return (iterator(item) == true || (iterator(item) !== null && typeof(iterator(item)) == 'object') );
+        return (iterator(item) == true || typeof(iterator(item)) == 'object' );
     }, true);
   };
 
